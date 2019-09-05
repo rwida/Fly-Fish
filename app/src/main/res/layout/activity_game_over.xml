@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    tools:context=".GameOverActivity">
+
+
+    <TextView
+        android:id="@+id/tvGameOver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Game Over"
+        android:textAlignment="center"
+        android:textSize="50dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"/>
+
+
+    <Button
+        android:id="@+id/btnPlayAgain"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvGameOver"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:text="Play Again"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPlayAgain"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:text="Exit Game"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPlayAgain"
+        android:text="Score"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="80dp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
